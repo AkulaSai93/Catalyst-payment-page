@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import CtaButton from "./CtaButton";
 import { useEffect, useState } from "react";
 
 type NavLink = { href: string; label: string };
@@ -27,10 +28,6 @@ export default function SiteHeader() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const applyButton = scrolled
-    ? "bg-white text-ink hover:bg-brand hover:text-white"
-    : "bg-ink text-white hover:bg-brand";
 
   const navLink = scrolled
     ? "text-white/90 hover:text-brand"
@@ -80,12 +77,11 @@ export default function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="#apply"
-            className={`hidden items-center justify-center rounded-full px-6 py-3 font-display text-[0.9375rem] font-semibold whitespace-nowrap transition-[transform,color,background-color] duration-300 ease-cinematic hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand sm:inline-flex ${applyButton}`}
-          >
-            Secure Your Seat
-          </Link>
+          <span className="hidden sm:block">
+            <CtaButton size="sm" variant={scrolled ? "light" : "dark"}>
+              Secure Your Seat
+            </CtaButton>
+          </span>
 
           <button
             type="button"
@@ -140,13 +136,11 @@ export default function SiteHeader() {
             </li>
           ))}
         </ul>
-        <Link
-          href="#apply"
-          onClick={() => setMenuOpen(false)}
-          className={`mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 font-display text-[0.9375rem] font-semibold transition-colors duration-300 ease-cinematic sm:hidden ${applyButton}`}
-        >
-          Secure Your Seat
-        </Link>
+        <span className="mt-6 block sm:hidden">
+          <CtaButton size="sm" variant={scrolled ? "light" : "dark"}>
+            Secure Your Seat
+          </CtaButton>
+        </span>
       </nav>
     </header>
   );

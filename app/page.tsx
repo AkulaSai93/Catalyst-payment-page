@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/SiteHeader";
+import HeroSection from "@/components/HeroSection";
 import WorkedAtSection from "@/components/WorkedAtSection";
 import PaymentPlanSection from "@/components/PaymentPlanSection";
 import BeyondCollegeSection from "@/components/BeyondCollegeSection";
@@ -17,8 +18,8 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
-      {/* Clears the fixed header. */}
-      <main id="home" className="bg-surface pt-[4.5rem] lg:pt-[5.5rem]">
+      <main className="bg-surface">
+        <HeroSection />
         {/* 1 */} <WorkedAtSection />
         {/* 2 */} <PaymentPlanSection />
         {/* 3 */} <BeyondCollegeSection />

@@ -17,6 +17,21 @@
   animation: marquee-left var(--marquee-duration, 30s) linear infinite;
 }
 
+/* The rail arrow drifts right, hinting the cards scroll. */
+@utility nudge-right {
+  animation: nudge-right 1.4s ease-in-out infinite;
+}
+
+@keyframes nudge-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
 @keyframes marquee-left {
   from {
     transform: translateX(0);

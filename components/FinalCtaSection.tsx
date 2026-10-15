@@ -1,4 +1,4 @@
-import Link from "next/link";
+import CtaButton from "./CtaButton";
 
 export default function FinalCtaSection() {
   return (
@@ -47,20 +47,13 @@ export default function FinalCtaSection() {
             <span className="font-semibold text-white">January 4, 2027</span>
           </p>
 
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link
-              href="/login"
-              className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 font-display text-[0.9375rem] font-semibold text-brand transition-[transform,box-shadow] duration-300 ease-cinematic hover:-translate-y-px hover:shadow-[0_14px_30px_-16px_rgba(0,0,0,0.6)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-            >
+          <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+            <CtaButton variant="light" href="/login">
               Secure Your Seat
-            </Link>
-
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-white/45 px-7 py-3.5 font-display text-[0.9375rem] font-semibold text-white transition-[background-color,border-color,color,transform] duration-300 ease-cinematic hover:-translate-y-px hover:border-white hover:bg-white/15 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-            >
+            </CtaButton>
+            <CtaButton variant="outline" href="/contact">
               Talk to an Advisor
-            </Link>
+            </CtaButton>
           </div>
         </div>
       </div>
