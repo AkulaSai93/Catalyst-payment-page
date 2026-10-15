@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Design tokens — lifted from the live uGSOT Catalyst site. */
+@theme {
+  --color-brand: #e6161f;
+  --color-ink: #0a0a0b;
+  --color-ink-muted: #444444;
+  --color-ink-raised: #1b1b1f;
+  --color-surface: #f3f4f6;
+  --color-hairline: #d5d8dd;
+
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* One track scrolls exactly its own width, so duplicate tracks loop seamlessly. */
+@utility marquee-left {
+  animation: marquee-left var(--marquee-duration, 30s) linear infinite;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* `inline` is required: these resolve variables next/font sets at runtime. */
+@theme inline {
+  --font-display: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-accent: var(--font-bricolage-grotesque), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* The site's shared heading treatment. */
+@utility type-heading {
+  font-family: var(--font-display);
+  letter-spacing: -0.0104em;
+  line-height: 1.3312;
+}
+
+html,
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Horizontal project rails scroll without a visible scrollbar. */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
