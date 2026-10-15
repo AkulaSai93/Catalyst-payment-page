@@ -26,7 +26,7 @@ export default function WorkedAtSection() {
     <section
       id="worked-at"
       aria-labelledby="worked-at-heading"
-      className="relative bg-[linear-gradient(to_bottom,#eef1f8,#fafafb)] py-12 sm:py-14 lg:py-16"
+      className="relative bg-surface py-12 sm:py-14 lg:py-16"
     >
       <h2
         id="worked-at-heading"

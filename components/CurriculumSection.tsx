@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 import { BookOpen, Check, ChevronDown } from "lucide-react";
-import CatalystCta from "./CatalystCta";
 
 type Project = { image: string; title: string; description: string };
 
@@ -320,10 +319,6 @@ export default function CurriculumSection() {
               );
             })}
           </div>
-        </div>
-
-        <div className="mt-10 flex justify-center lg:mt-12">
-          <CatalystCta />
         </div>
       </div>
     </section>

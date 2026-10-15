@@ -1,23 +1,38 @@
+import SiteHeader from "@/components/SiteHeader";
 import WorkedAtSection from "@/components/WorkedAtSection";
-import HackathonsSection from "@/components/HackathonsSection";
+import PaymentPlanSection from "@/components/PaymentPlanSection";
 import BeyondCollegeSection from "@/components/BeyondCollegeSection";
 import CurriculumSection from "@/components/CurriculumSection";
+import HackathonsSection from "@/components/HackathonsSection";
+import ForParentsSection from "@/components/ForParentsSection";
+import CertificateSection from "@/components/CertificateSection";
 import LeadersSection from "@/components/LeadersSection";
 import LearnFromPeopleSection from "@/components/LearnFromPeopleSection";
-import CertificateSection from "@/components/CertificateSection";
 import EcosystemSection from "@/components/EcosystemSection";
+import FaqSection from "@/components/FaqSection";
+import FinalCtaSection from "@/components/FinalCtaSection";
+import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
   return (
-    <main className="bg-surface">
-      <WorkedAtSection />
-      <HackathonsSection />
-      <BeyondCollegeSection />
-      <CurriculumSection />
-      <LeadersSection />
-      <LearnFromPeopleSection />
-      <CertificateSection />
-      <EcosystemSection />
-    </main>
+    <>
+      <SiteHeader />
+      {/* Clears the fixed header. */}
+      <main id="home" className="bg-surface pt-[4.5rem] lg:pt-[5.5rem]">
+        {/* 1 */} <WorkedAtSection />
+        {/* 2 */} <PaymentPlanSection />
+        {/* 3 */} <BeyondCollegeSection />
+        {/* 4 */} <CurriculumSection />
+        {/* 5 */} <HackathonsSection />
+        {/* 6 */} <ForParentsSection />
+        {/* 7 */} <CertificateSection />
+        {/* 8 */} <LeadersSection />
+        {/* 9 */} <LearnFromPeopleSection />
+        <EcosystemSection />
+        {/* 10 */} <FaqSection />
+        <FinalCtaSection />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

@@ -11,7 +11,6 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
-import CatalystCta from "./CatalystCta";
 
 type Item = { icon: LucideIcon; title: string; detail: string };
 
@@ -68,7 +67,7 @@ export default function BeyondCollegeSection() {
     <section
       id="beyond-college"
       aria-labelledby="beyond-college-heading"
-      className="relative isolate overflow-hidden bg-[#fafafb] py-12 sm:py-20 lg:py-24"
+      className="relative isolate overflow-hidden bg-surface py-12 sm:py-20 lg:py-24"
     >
       {/* Soft colour wash behind the panels. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -215,10 +214,6 @@ export default function BeyondCollegeSection() {
             <span className="font-accent text-brand">Catalyze it.</span>
           </p>
           <span aria-hidden="true" className="h-px flex-1 bg-black/12" />
-        </div>
-
-        <div className="mt-8 flex justify-center sm:mt-10">
-          <CatalystCta />
         </div>
       </div>
     </section>

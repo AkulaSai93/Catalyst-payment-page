@@ -5,7 +5,7 @@ export default function CertificateSection() {
     <section
       id="certificate"
       aria-labelledby="certificate-heading"
-      className="relative bg-[linear-gradient(to_bottom,transparent_35%,#f4f4f5)]"
+      className="relative bg-[linear-gradient(to_bottom,transparent_35%,var(--color-surface))]"
     >
       <div className="mx-auto flex max-w-[64rem] flex-col items-center gap-10 px-5 py-16 sm:gap-12 sm:px-6 sm:py-20 lg:gap-15 lg:py-20">
         <div className="flex flex-col items-center gap-4 text-center sm:gap-5">

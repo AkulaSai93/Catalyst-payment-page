@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CatalystCta from "./CatalystCta";
 
 type Brand = {
   src: string;
@@ -63,7 +62,7 @@ export default function EcosystemSection() {
             <li
               key={brand.alt}
               style={{ "--rotate": brand.rotate } as React.CSSProperties}
-              className={`flex h-[clamp(5rem,26vw,9.375rem)] w-[clamp(5rem,26vw,9.375rem)] flex-none items-center justify-center rounded-[14px] border-[3px] border-ink-raised bg-white p-2 shadow-[0_12px_28px_-8px_rgba(0,0,0,0.5)] [transform:rotate(calc(var(--rotate)*var(--fan)*1deg))] [transform-style:preserve-3d] will-change-transform min-[600px]:rounded-[22px] min-[600px]:border-4 min-[600px]:p-3 ${
+              className={`flex h-[clamp(5rem,26vw,9.375rem)] w-[clamp(5rem,26vw,9.375rem)] flex-none items-center justify-center rounded-[14px] border-[3px] border-ink-raised bg-white p-2 shadow-[0_12px_28px_-8px_rgba(0,0,0,0.5)] [transform:rotate(calc(var(--rotate)*var(--fan)*1deg))] [transform-style:preserve-3d] transition-transform duration-500 ease-cinematic will-change-transform hover:z-10 hover:[transform:translateY(-14px)_rotate(calc(var(--rotate)*var(--fan)*1deg))_rotateY(-4.2deg)_rotateX(4.2deg)_scale(1.12)] min-[600px]:rounded-[22px] min-[600px]:border-4 min-[600px]:p-3 ${
                 index > 0 ? "min-[901px]:-ml-3.5" : ""
               }`}
             >
@@ -100,8 +99,6 @@ export default function EcosystemSection() {
           The <span className="text-brand">uGSOT technology</span> ecosystem now
           accessible from wherever you study.
         </p>
-
-        <CatalystCta variant="light" />
       </div>
     </section>
   );
