@@ -31,10 +31,14 @@ export default function SiteHeader() {
 
   const navLink = "text-white/90 hover:text-brand";
 
+  // Transparent over the hero, but an open menu needs a solid backdrop or the
+  // links sit unreadably on top of the hero artwork.
+  const filled = scrolled || menuOpen;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 px-6 py-4 transition-colors duration-300 ease-cinematic sm:px-8 lg:px-14 lg:py-5 ${
-        scrolled
+        filled
           ? "border-b border-white/10 bg-ink/95 backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
