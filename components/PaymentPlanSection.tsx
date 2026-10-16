@@ -38,7 +38,7 @@ const PLANS: Plan[] = [
       "Simplest way to pay",
     ],
     cta: "Choose Pay in Full",
-    icon: "bg-ink",
+    icon: "bg-brand",
   },
   {
     id: "emi",
@@ -55,7 +55,7 @@ const PLANS: Plan[] = [
       "Same programme access from day one",
     ],
     cta: "Choose EMI Plan",
-    icon: "bg-gradient-to-br from-[#ffd9a0] via-[#ff9ec4] to-[#8ab6ff]",
+    icon: "bg-brand/12 ring-1 ring-brand/30",
   },
 ];
 
@@ -97,10 +97,10 @@ export default function PaymentPlanSection() {
                 return (
                   <label
                     key={plan.id}
-                    className={`group relative flex cursor-pointer flex-col rounded-[1.5rem] p-6 transition-[background-color,box-shadow,transform] duration-300 ease-cinematic sm:p-7 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-4 has-[:focus-visible]:outline-ink ${
+                    className={`group relative flex cursor-pointer flex-col rounded-[1.5rem] p-6 transition-[background-color,box-shadow,transform] duration-300 ease-cinematic sm:p-7 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-4 has-[:focus-visible]:outline-brand ${
                       isSelected
-                        ? "bg-white shadow-[0_24px_50px_-30px_rgba(10,10,11,0.45)] ring-2 ring-ink"
-                        : "bg-white ring-1 ring-black/10 hover:ring-black/25"
+                        ? "bg-white shadow-[0_24px_50px_-30px_rgba(230,22,31,0.45)] ring-2 ring-brand"
+                        : "bg-white ring-1 ring-black/10 hover:ring-brand/40"
                     }`}
                   >
                     <input
@@ -117,11 +117,11 @@ export default function PaymentPlanSection() {
                         aria-hidden="true"
                         className={`flex h-11 w-11 items-center justify-center rounded-[0.875rem] ${plan.icon}`}
                       >
-                        <span className="h-3.5 w-3.5 rounded-full bg-white/90 shadow-inner" />
+                        <span className={`h-3.5 w-3.5 rounded-full ${plan.id === "emi" ? "bg-brand" : "bg-white"}`} />
                       </span>
 
                       {plan.badge && (
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-black/10 bg-white px-3 py-1.5 text-[0.75rem] font-medium text-ink">
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-brand/25 bg-brand/8 px-3 py-1.5 text-[0.75rem] font-medium text-brand">
                           <Sparkles aria-hidden="true" className="h-3.5 w-3.5" />
                           {plan.badge}
                         </span>
@@ -154,7 +154,7 @@ export default function PaymentPlanSection() {
                         <li key={item} className="flex items-start gap-2.5">
                           <Check
                             aria-hidden="true"
-                            className="mt-0.5 h-3.5 w-3.5 shrink-0 text-ink-muted"
+                            className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand"
                           />
                           <span className="text-[0.8125rem] leading-snug text-pretty text-ink-muted">
                             {item}
@@ -169,8 +169,8 @@ export default function PaymentPlanSection() {
                       aria-hidden="true"
                       className={`mt-7 inline-flex w-full items-center justify-center rounded-full px-6 py-3.5 text-[0.9375rem] font-medium transition-colors duration-300 ease-cinematic ${
                         isSelected
-                          ? "bg-ink text-white"
-                          : "border border-black/15 bg-white text-ink group-hover:border-black/35"
+                          ? "bg-brand text-white"
+                          : "border border-black/15 bg-white text-ink group-hover:border-brand/50 group-hover:text-brand"
                       }`}
                     >
                       {isSelected ? "Selected" : plan.cta}

@@ -48,7 +48,7 @@ export default function FinalCtaSection() {
           </p>
 
           <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-            <CtaButton variant="light" href="/login">
+            <CtaButton variant="invert" href="/login">
               Secure Your Seat
             </CtaButton>
             <CtaButton variant="outline" href="/contact">

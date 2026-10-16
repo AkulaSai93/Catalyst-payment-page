@@ -29,16 +29,14 @@ export default function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const navLink = scrolled
-    ? "text-white/90 hover:text-brand"
-    : "text-ink/80 hover:text-brand";
+  const navLink = "text-white/90 hover:text-brand";
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 px-6 py-4 transition-colors duration-300 ease-cinematic sm:px-8 lg:px-14 lg:py-5 ${
         scrolled
           ? "border-b border-white/10 bg-ink/95 backdrop-blur-md"
-          : "border-b border-transparent bg-surface"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between gap-6">
@@ -48,11 +46,7 @@ export default function SiteHeader() {
           aria-label="upGrad School of Technology — home"
         >
           <Image
-            src={
-              scrolled
-                ? "/assets/ugsot_x_catalyst_logo_white.png"
-                : "/assets/ugsot_x_catalyst_logo_dark.png"
-            }
+            src="/assets/ugsot_x_catalyst_logo_white.png"
             alt="upGrad School of Technology"
             width={315}
             height={40}
@@ -78,7 +72,7 @@ export default function SiteHeader() {
 
         <div className="flex items-center gap-3">
           <span className="hidden sm:block">
-            <CtaButton size="sm" variant={scrolled ? "light" : "dark"}>
+            <CtaButton size="sm" variant="light">
               Secure Your Seat
             </CtaButton>
           </span>
@@ -89,9 +83,7 @@ export default function SiteHeader() {
             aria-controls="site-mobile-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             onClick={() => setMenuOpen((open) => !open)}
-            className={`flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-[5px] transition-colors duration-300 ease-cinematic focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand lg:hidden ${
-              scrolled ? "text-white" : "text-ink"
-            }`}
+            className="flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-[5px] text-white transition-colors duration-300 ease-cinematic focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand lg:hidden"
           >
             <span
               aria-hidden="true"
@@ -119,9 +111,7 @@ export default function SiteHeader() {
         id="site-mobile-menu"
         aria-label="Primary mobile"
         hidden={!menuOpen}
-        className={`mt-6 max-h-[calc(100svh-9rem)] overflow-y-auto border-t pt-6 lg:hidden ${
-          scrolled ? "border-white/10" : "border-ink/10"
-        }`}
+        className="mt-6 max-h-[calc(100svh-9rem)] overflow-y-auto border-t border-white/10 pt-6 lg:hidden"
       >
         <ul className="flex flex-col gap-5 font-display text-lg">
           {NAV_LINKS.map((link) => (
@@ -137,7 +127,7 @@ export default function SiteHeader() {
           ))}
         </ul>
         <span className="mt-6 block sm:hidden">
-          <CtaButton size="sm" variant={scrolled ? "light" : "dark"}>
+          <CtaButton size="sm" variant="light">
             Secure Your Seat
           </CtaButton>
         </span>

@@ -11,6 +11,12 @@ const VARIANTS = {
     body: "bg-white text-ink hover:bg-brand hover:text-white",
     arrow: "bg-ink text-white",
   },
+  /** White button that flips to ink on hover — for brand-red surfaces, where
+   *  a red hover would vanish into the background. */
+  invert: {
+    body: "bg-white text-ink hover:bg-ink hover:text-white",
+    arrow: "bg-ink text-white group-hover:bg-white group-hover:text-ink",
+  },
   /** Stroke only — no fill, for sitting quietly beside a solid button. */
   outline: {
     body: "border border-white text-white hover:bg-white hover:text-brand",
@@ -45,11 +51,11 @@ export default function CtaButton({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center font-medium whitespace-nowrap transition-[transform,color,background-color,box-shadow] duration-300 ease-cinematic hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand ${v.body} ${s.body} ${className}`}
+      className={`group inline-flex items-center justify-center font-medium whitespace-nowrap transition-[transform,color,background-color,box-shadow] duration-300 ease-cinematic hover:-translate-y-px focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand ${v.body} ${s.body} ${className}`}
     >
       {children}
       <span
-        className={`flex shrink-0 items-center justify-center ${v.arrow} ${s.box}`}
+        className={`flex shrink-0 items-center justify-center transition-colors duration-300 ease-cinematic ${v.arrow} ${s.box}`}
       >
         <svg
           viewBox="0 0 16 16"

@@ -1,5 +1,7 @@
 import SiteHeader from "@/components/SiteHeader";
+import HeroMedia from "@/components/HeroMedia";
 import HeroSection from "@/components/HeroSection";
+import EnrollSection from "@/components/EnrollSection";
 import WorkedAtSection from "@/components/WorkedAtSection";
 import PaymentPlanSection from "@/components/PaymentPlanSection";
 import BeyondCollegeSection from "@/components/BeyondCollegeSection";
@@ -19,7 +21,12 @@ export default function Home() {
     <>
       <SiteHeader />
       <main className="bg-surface">
-        <HeroSection />
+        {/* Hero and the enrollment block share one media backdrop. */}
+        <div className="relative isolate bg-ink">
+          <HeroMedia />
+          <HeroSection />
+          <EnrollSection />
+        </div>
         {/* 1 */} <WorkedAtSection />
         {/* 2 */} <PaymentPlanSection />
         {/* 3 */} <BeyondCollegeSection />
