@@ -55,12 +55,20 @@
   line-height: 1.3312;
 }
 
-html,
+html {
+  /* Both ends of the page are dark — the hero at the top, the footer panel at
+     the bottom — so the overscroll canvas is dark rather than flashing grey.
+     `overscroll-behavior-y` suppresses the rubber-band itself where supported. */
+  background-color: var(--color-ink);
+  overscroll-behavior-y: none;
+}
+
 body {
-  background: var(--color-surface);
+  background-color: transparent;
   color: var(--color-ink);
   font-family: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
 }
 
 /* Horizontal project rails scroll without a visible scrollbar. */
