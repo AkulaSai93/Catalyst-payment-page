@@ -21,7 +21,7 @@ export default function FinalCtaSection() {
         />
       </svg>
 
-      <div className="mx-auto grid max-w-[78rem] grid-cols-1 items-center gap-10 px-6 sm:px-8 lg:grid-cols-2 lg:gap-16">
+      <div className="mx-auto grid max-w-[78rem] grid-cols-1 items-center gap-10 px-6 text-center sm:px-8 sm:text-left lg:grid-cols-2 lg:gap-16">
         <div>
           <h2
             id="final-cta-heading"
@@ -29,7 +29,7 @@ export default function FinalCtaSection() {
           >
             Now choose how far you want to go.
           </h2>
-          <p className="mt-4 max-w-[34rem] font-display text-[clamp(0.9375rem,1.3vw,1.125rem)] text-pretty text-white/80">
+          <p className="mx-auto mt-4 max-w-[34rem] font-display text-[clamp(0.9375rem,1.3vw,1.125rem)] text-pretty text-white/80 sm:mx-0">
             For ambitious Year 1 &amp; Year 2 students across India.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function FinalCtaSection() {
             <span className="font-semibold text-white">January 4, 2027</span>
           </p>
 
-          <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+          <div className="mt-7 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
             <CtaButton variant="invert" href="/login">
               Secure Your Seat
             </CtaButton>

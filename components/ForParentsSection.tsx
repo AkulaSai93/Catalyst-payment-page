@@ -82,7 +82,7 @@ export default function ForParentsSection() {
 
           <Link
             href="/contact"
-            className="inline-flex shrink-0 items-center gap-2.5 rounded-full bg-white px-5 py-2.5 font-display text-[0.9375rem] font-medium text-ink transition-[background-color,color,transform] duration-300 ease-cinematic hover:-translate-y-px hover:bg-brand hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-white px-4 py-2.5 font-display text-[0.8125rem] font-medium whitespace-nowrap text-ink sm:gap-2.5 sm:px-5 sm:text-[0.9375rem] transition-[background-color,color,transform] duration-300 ease-cinematic hover:-translate-y-px hover:bg-brand hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand"
           >
             Talk to an admissions counsellor
             <svg
