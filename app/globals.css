@@ -48,6 +48,11 @@
   --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* One size for every section heading, so they stay in step. */
+@utility type-section-heading {
+  font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+}
+
 /* The site's shared heading treatment. */
 @utility type-heading {
   font-family: var(--font-display);

@@ -236,9 +236,12 @@ export default function WorkedAtSection() {
     >
       <h2
         id="worked-at-heading"
-        className="type-heading px-6 text-center text-[clamp(1.375rem,2.6vw,2rem)] font-bold text-balance text-ink"
+        className="type-heading px-6 text-center type-section-heading font-bold text-balance text-ink"
       >
-        Built by people who&apos;ve worked at
+        <span className="font-accent font-medium text-brand">
+          Built by people
+        </span>{" "}
+        who&apos;ve worked at
       </h2>
 
       {/* Full-bleed rail, faded out at both edges. */}

@@ -76,13 +76,14 @@ export default function BeyondCollegeSection() {
       </div>
 
       <div className="mx-auto max-w-[96rem] px-5 sm:px-6">
-        <div className="mx-auto flex max-w-[52rem] flex-col items-center text-center">
+        <div className="mx-auto flex max-w-[72rem] flex-col items-center text-center">
           <h2
             id="beyond-college-heading"
-            className="type-heading text-[clamp(1.75rem,3.4vw,2.75rem)] font-semibold text-balance text-ink"
+            className="type-heading type-section-heading font-semibold text-balance text-ink sm:whitespace-nowrap sm:text-nowrap"
           >
-            Already chosen your college?{" "}
-            <span className="font-accent text-brand">Perfect.</span>
+            Wondering if{" "}
+            <span className="font-accent text-brand">uGSOT Catalyst</span> is
+            right for you?
           </h2>
           <p className="mt-3 max-w-[46rem] text-[clamp(0.875rem,1.2vw,1.0625rem)] leading-relaxed text-balance text-ink-muted sm:mt-4">
             Your college handles your degree, professors, exams, campus, and

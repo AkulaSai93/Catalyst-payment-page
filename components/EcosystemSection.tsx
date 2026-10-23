@@ -39,7 +39,7 @@ export default function EcosystemSection() {
         <div className="flex max-w-[63rem] flex-col items-center gap-6 text-center">
           <h2
             id="ecosystem-heading"
-            className="type-heading text-[clamp(1.875rem,3.8vw,2.75rem)] font-semibold text-white"
+            className="type-heading type-section-heading font-semibold text-white"
           >
             Built on{" "}
             <span className="font-accent font-medium text-brand">upGrad&apos;s</span>

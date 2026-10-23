@@ -76,13 +76,14 @@ export default function PaymentPlanSection() {
       <div className="mx-auto max-w-[72rem] px-6 sm:px-8">
         <h2
           id="payment-plan-heading"
-          className="type-heading text-center text-[clamp(1.75rem,3.4vw,2.5rem)] font-bold text-ink"
+          className="type-heading text-center type-section-heading font-bold text-ink"
         >
-          Choose how you pay.
+          <span className="font-accent font-medium text-brand">Choose</span> how
+          you pay.
         </h2>
         <p className="mx-auto mt-3 max-w-[42rem] text-center text-[clamp(0.9375rem,1.2vw,1.0625rem)] leading-relaxed text-pretty text-ink-muted">
-          ₹50,000 covers Year 1 in full. The same amount is billed again for
-          Year 2 when it begins — ₹1,00,000 across the full 2-year program.
+          ₹50,000 per year, billed at the start of each year. ₹1,00,000 for the
+          full 2-year programme.
         </p>
 
         <fieldset className="mt-8 sm:mt-10">
@@ -181,6 +182,7 @@ export default function PaymentPlanSection() {
             </div>
           </div>
         </fieldset>
+
       </div>
     </section>
   );

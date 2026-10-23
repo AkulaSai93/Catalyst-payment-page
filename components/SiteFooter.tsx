@@ -52,9 +52,8 @@ export default function SiteFooter() {
         <div className="flex flex-col items-center gap-10 px-6 py-10 min-[900px]:gap-12 min-[900px]:p-14">
           <div className="flex max-w-[45.25rem] flex-col items-center gap-[30px]">
             <div className="flex flex-col items-center gap-4 text-center">
-              <h2 className="type-heading flex flex-col items-center text-[clamp(1.75rem,3.6vw,3.25rem)] font-semibold text-white">
-                <span>Now choose how</span>
-                <span>far you want to go.</span>
+              <h2 className="type-heading type-section-heading max-w-[20ch] font-semibold text-balance text-white">
+                Build real-world tech skills alongside your college degree.
               </h2>
               <p className="font-display text-[15px] leading-[1.65] text-[#e5e5e5]">
                 {DISCLAIMER}

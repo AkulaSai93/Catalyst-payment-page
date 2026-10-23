@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CtaButton from "./CtaButton";
 
 export default function CertificateSection() {
   return (
@@ -11,7 +12,7 @@ export default function CertificateSection() {
         <div className="flex flex-col items-center gap-4 text-center sm:gap-5">
           <h2
             id="certificate-heading"
-            className="type-heading text-[clamp(1.75rem,7vw,2rem)] font-semibold text-balance text-ink sm:text-[clamp(2rem,4vw,3.25rem)]"
+            className="type-heading type-section-heading font-semibold text-balance text-ink"
           >
             Earn a Completion{" "}
             <span className="font-accent font-medium whitespace-nowrap text-brand">
@@ -42,6 +43,8 @@ export default function CertificateSection() {
             </span>
           </span>
         </div>
+
+        <CtaButton href="/login">Secure Your Seat</CtaButton>
       </div>
     </section>
   );

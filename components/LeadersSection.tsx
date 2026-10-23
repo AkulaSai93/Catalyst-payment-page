@@ -40,7 +40,7 @@ export default function LeadersSection() {
         <div className="flex flex-col items-center gap-4 text-center sm:gap-5">
           <h2
             id="leaders-heading"
-            className="type-heading text-[clamp(1.75rem,7vw,2rem)] font-semibold text-balance text-ink sm:text-[clamp(2rem,4vw,3rem)]"
+            className="type-heading type-section-heading font-semibold text-balance text-ink"
           >
             <span className="block">
               <span className="font-accent font-medium whitespace-nowrap text-brand">

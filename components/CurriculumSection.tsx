@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
+import CtaButton from "./CtaButton";
 
 type Project = { image: string; title: string; description: string };
 
@@ -280,7 +281,7 @@ export default function CurriculumSection() {
         <div className="mx-auto flex max-w-[44rem] flex-col items-center gap-3 text-center">
           <h2
             id="curriculum-heading"
-            className="type-heading text-[clamp(1.625rem,3.2vw,2.5rem)] font-semibold text-balance text-ink"
+            className="type-heading type-section-heading font-semibold text-balance text-ink"
           >
             A <span className="font-accent font-medium text-brand">Curriculum</span>{" "}
             Built Around How Engineers Actually Learn.
@@ -401,6 +402,10 @@ export default function CurriculumSection() {
               );
             })}
           </div>
+        </div>
+
+        <div className="mt-10 flex justify-center lg:mt-12">
+          <CtaButton href="/login">Secure Your Seat</CtaButton>
         </div>
       </div>
     </section>

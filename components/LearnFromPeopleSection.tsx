@@ -63,7 +63,7 @@ export default function LearnFromPeopleSection() {
       <div className="mx-auto max-w-[78rem] px-6 sm:px-8">
         <h2
           id="learn-from-people-heading"
-          className="type-heading mx-auto max-w-[37.5rem] text-center text-[clamp(1.75rem,4vw,3rem)] font-semibold text-ink"
+          className="type-heading mx-auto max-w-[37.5rem] text-center type-section-heading font-semibold text-ink"
         >
           Learn From{" "}
           <span className="font-accent font-medium text-brand">People</span> Who

@@ -22,18 +22,15 @@ const COVERED = [
 export default function EnrollCard() {
   return (
     <div className="@container relative isolate overflow-hidden rounded-2xl bg-brand p-6 sm:p-7">
-      <svg
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/assets/hero/enroll-chevrons.svg"
+        alt=""
         aria-hidden="true"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        className="pointer-events-none absolute -top-[18%] -right-[12%] -z-10 h-[136%] w-[52%] text-white/[0.09]"
-      >
-        <path d="M8 0 58 50 8 100 30 100 80 50 30 0Z" fill="currentColor" />
-        <path
-          d="M52 0 100 48 100 52 52 100 74 100 100 74 100 26 74 0Z"
-          fill="currentColor"
-        />
-      </svg>
+        width={262.594}
+        height={535.5}
+        className="pointer-events-none absolute top-[-70.75px] right-[-60.6px] -z-10 max-w-none"
+      />
 
       <div className="@[44rem]:flex @[44rem]:items-end @[44rem]:justify-between @[44rem]:gap-12">
         <div className="@[44rem]:max-w-[34rem]">
@@ -63,19 +60,12 @@ export default function EnrollCard() {
           >
             Secure Your Seat
           </CtaButton>
-          <Link
-            href="/brochure"
-            className="block text-center font-display text-[0.875rem] text-white underline decoration-white/60 decoration-2 underline-offset-4 transition-colors duration-300 ease-cinematic hover:decoration-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
-          >
-            Download brochure
-          </Link>
         </div>
       </div>
 
       <div className="mt-6 space-y-2 border-t border-white/25 pt-5 @[44rem]:flex @[44rem]:items-center @[44rem]:justify-between @[44rem]:space-y-0">
-        <p className="font-display text-[0.8125rem] text-white/80">
-          Next cohort starts{" "}
-          <span className="font-semibold text-white">January 4, 2027</span>
+        <p className="font-display text-[0.8125rem] font-semibold text-white">
+          January 4, 2027
         </p>
         <Link
           href="#payment-plan"

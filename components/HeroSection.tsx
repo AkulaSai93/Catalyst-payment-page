@@ -13,17 +13,13 @@ export default function HeroSection() {
     >
       <div className="mx-auto grid w-full max-w-[84rem] grid-cols-12 items-center gap-x-0 gap-y-10 px-6 sm:px-8 lg:gap-x-12">
         <div className="col-span-12 lg:col-span-7">
-          <p className="font-mono text-[0.75rem] tracking-[0.2em] text-white/70 uppercase">
-            uGSOT Catalyst <span className="text-brand">·</span> Enrollment
-          </p>
-
           <h1
             id="hero-heading"
-            className="mt-6 font-display text-[clamp(2.25rem,4.6vw,3.75rem)] leading-[1.06] font-bold tracking-[-0.025em] text-balance text-white"
+            className="font-display text-[clamp(2.25rem,4.6vw,3.75rem)] leading-[1.06] font-bold tracking-[-0.025em] text-balance text-white"
           >
             Your college gives you a degree.{" "}
             <span className="font-accent font-medium text-brand">Catalyst</span>{" "}
-            helps you catalyze it.
+            makes you stand out.
           </h1>
 
           <p className="mt-6 max-w-[38rem] font-display text-[clamp(1rem,1.2vw,1.0625rem)] leading-relaxed text-pretty text-white/80">

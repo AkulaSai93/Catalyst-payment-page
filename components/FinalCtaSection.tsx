@@ -1,4 +1,5 @@
 import CtaButton from "./CtaButton";
+import TalkToAdvisorButton from "./TalkToAdvisorButton";
 
 export default function FinalCtaSection() {
   return (
@@ -25,9 +26,9 @@ export default function FinalCtaSection() {
         <div>
           <h2
             id="final-cta-heading"
-            className="type-heading text-[clamp(1.75rem,3.4vw,3rem)] font-bold text-balance text-white"
+            className="type-heading type-section-heading font-bold text-balance text-white"
           >
-            Now choose how far you want to go.
+            Build real-world tech skills alongside your college degree.
           </h2>
           <p className="mx-auto mt-4 max-w-[34rem] font-display text-[clamp(0.9375rem,1.3vw,1.125rem)] text-pretty text-white/80 sm:mx-0">
             For ambitious Year 1 &amp; Year 2 students across India.
@@ -51,9 +52,7 @@ export default function FinalCtaSection() {
             <CtaButton variant="invert" href="/login">
               Secure Your Seat
             </CtaButton>
-            <CtaButton variant="outline" href="/contact">
-              Talk to an Advisor
-            </CtaButton>
+            <TalkToAdvisorButton />
           </div>
         </div>
       </div>

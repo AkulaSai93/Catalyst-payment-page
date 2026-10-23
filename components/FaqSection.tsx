@@ -104,7 +104,7 @@ export default function FaqSection() {
         <div className="flex w-full flex-col min-[1000px]:sticky min-[1000px]:top-28 min-[1000px]:shrink min-[1000px]:basis-[32.75rem] min-[1000px]:self-start">
           <h2
             id="faq-heading"
-            className="type-heading flex flex-col text-[clamp(1.875rem,4.7vw,4.25rem)] font-semibold text-ink"
+            className="type-heading flex flex-col type-section-heading font-semibold text-ink"
           >
             <span className="whitespace-nowrap">Got Questions?</span>
             <span className="font-accent font-light whitespace-nowrap text-brand">
