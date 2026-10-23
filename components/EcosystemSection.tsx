@@ -42,11 +42,10 @@ export default function EcosystemSection() {
             className="type-heading type-section-heading font-semibold text-white"
           >
             Built on{" "}
-            <span className="font-accent font-medium text-brand">upGrad&apos;s</span>
-            <span className="whitespace-normal sm:whitespace-pre-line">
-              {" "}
-              Legacy. Designed for the Future of Tech.
-            </span>
+            <span className="font-accent font-medium text-brand">upGrad&apos;s</span>{" "}
+            Legacy.{" "}
+            {/* Second sentence drops to its own line once there's room for it. */}
+            <span className="sm:block">Designed for the Future of Tech.</span>
           </h2>
           <p className="max-w-[55.75rem] font-display text-[clamp(1rem,1.8vw,1.5rem)] text-white">
             uGSOT builds on upGrad&apos;s broader education ecosystem to deliver
