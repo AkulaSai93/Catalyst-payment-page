@@ -22,8 +22,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/linkedin.png",
     name: "LinkedIn",
-    width: 3000,
-    height: 2000,
+    width: 800,
+    height: 533,
     frameW: 93.872,
     frameH: 27,
     crop: { w: "125.42%", h: "290.7%", left: "-12.37%", top: "-95.93%" },
@@ -31,8 +31,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/walmart.png",
     name: "Walmart",
-    width: 3840,
-    height: 2160,
+    width: 800,
+    height: 450,
     frameW: 104.201,
     frameH: 27,
     crop: { w: "106.87%", h: "232.01%", left: "-3.42%", top: "-66.17%" },
@@ -40,8 +40,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/paypal.png",
     name: "PayPal",
-    width: 3000,
-    height: 2000,
+    width: 800,
+    height: 533,
     frameW: 97.554,
     frameH: 27,
     crop: { w: "123.56%", h: "297.62%", left: "-12.03%", top: "-100.6%" },
@@ -49,8 +49,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/oracle.png",
     name: "Oracle",
-    width: 315,
-    height: 176,
+    width: 800,
+    height: 447,
     frameW: 158.062,
     frameH: 27,
     crop: { w: "112.1%", h: "366.67%", left: "-6.76%", top: "-129.17%" },
@@ -58,24 +58,24 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/physicswallah.png",
     name: "PhysicsWallah",
-    width: 250,
-    height: 252,
+    width: 793,
+    height: 800,
     frameW: 29.762,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/hotstar.png",
     name: "Hotstar",
-    width: 960,
-    height: 321,
+    width: 800,
+    height: 267,
     frameW: 89.72,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/vmware.png",
     name: "VMware",
-    width: 4096,
-    height: 2458,
+    width: 800,
+    height: 480,
     frameW: 153.217,
     frameH: 30,
     crop: { w: "100%", h: "306.48%", left: "0", top: "-120.95%" },
@@ -83,8 +83,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/microsoft.png",
     name: "Microsoft",
-    width: 824,
-    height: 303,
+    width: 800,
+    height: 294,
     frameW: 124.8,
     frameH: 30,
     crop: { w: "123.08%", h: "188.13%", left: "-11.54%", top: "-45.81%" },
@@ -92,40 +92,40 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/digitalocean.png",
     name: "DigitalOcean",
-    width: 1200,
-    height: 1200,
+    width: 800,
+    height: 800,
     frameW: 30,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/pinnium.png",
     name: "Pinnium",
-    width: 499,
-    height: 233,
+    width: 800,
+    height: 373,
     frameW: 64.249,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/hcltech.png",
     name: "HCLTech",
-    width: 400,
-    height: 400,
+    width: 800,
+    height: 800,
     frameW: 30,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/ibm.png",
     name: "IBM",
-    width: 1280,
-    height: 478,
+    width: 800,
+    height: 298,
     frameW: 80.335,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/google.png",
     name: "Google",
-    width: 3000,
-    height: 1250,
+    width: 800,
+    height: 333,
     frameW: 82.615,
     frameH: 30,
     crop: { w: "104.75%", h: "120.19%", left: "-2.79%", top: "-10.77%" },
@@ -141,8 +141,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/maybank.png",
     name: "Maybank",
-    width: 512,
-    height: 512,
+    width: 800,
+    height: 800,
     frameW: 137.143,
     frameH: 30,
     crop: { w: "100%", h: "457.14%", left: "0", top: "-179.46%" },
@@ -150,16 +150,16 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/salesforce.png",
     name: "Salesforce",
-    width: 1280,
-    height: 896,
+    width: 800,
+    height: 560,
     frameW: 38.571,
     frameH: 27,
   },
   {
     src: "/assets/companyLogo/partner-mark.png",
     name: "Hiring partner",
-    width: 200,
-    height: 200,
+    width: 800,
+    height: 800,
     frameW: 53.554,
     frameH: 36,
     crop: { w: "111.11%", h: "165.29%", left: "-11.11%", top: "-26.45%" },
@@ -167,8 +167,8 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/barclays.png",
     name: "Barclays",
-    width: 1200,
-    height: 800,
+    width: 800,
+    height: 533,
     frameW: 153.632,
     frameH: 30,
     crop: { w: "123.33%", h: "421.05%", left: "-11.72%", top: "-159.47%" },
@@ -176,16 +176,16 @@ const COMPANIES: Company[] = [
   {
     src: "/assets/companyLogo/cisco.png",
     name: "Cisco",
-    width: 2400,
-    height: 1367,
+    width: 800,
+    height: 455,
     frameW: 52.67,
     frameH: 30,
   },
   {
     src: "/assets/companyLogo/ineuron.png",
     name: "iNeuron",
-    width: 685,
-    height: 187,
+    width: 800,
+    height: 218,
     frameW: 129.232,
     frameH: 35.279,
   },
@@ -195,10 +195,19 @@ const COMPANIES: Company[] = [
 const TRACKS = [0, 1, 2];
 
 const track =
-  "flex w-max shrink-0 items-center motion-safe:marquee-left group-hover:[animation-play-state:paused] motion-reduce:w-full motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:gap-y-5";
+  "flex w-max shrink-0 items-center motion-safe:marquee-left [@media(hover:hover)]:group-hover:[animation-play-state:paused] motion-reduce:w-full motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:gap-y-5";
 
+/**
+ * Every track loads eagerly: the duplicates reuse the first track's URLs, so
+ * the extra requests are cache hits and no copy scrolls in half-painted.
+ */
 function Logo({ company, labelled }: { company: Company; labelled: boolean }) {
   const alt = labelled ? company.name : "";
+  // The crop blows the artwork up past its frame, so the frame width alone
+  // would under-request and serve a soft image.
+  const renderedWidth = Math.ceil(
+    company.frameW * (company.crop ? parseFloat(company.crop.w) / 100 : 1),
+  );
 
   return (
     <span
@@ -210,7 +219,8 @@ function Logo({ company, labelled }: { company: Company; labelled: boolean }) {
         alt={alt}
         width={company.width}
         height={company.height}
-        sizes={`${Math.ceil(company.frameW)}px`}
+        sizes={`${renderedWidth}px`}
+        loading="eager"
         className="absolute max-w-none object-cover"
         style={
           company.crop
