@@ -14,6 +14,8 @@ type Plan = {
   /** Rendered in lighter grey after the amount, as on a price tag. */
   decimals: string;
   badge?: string;
+  /** The design drops this plan's tagline below the price instead of above it. */
+  taglineBelowPrice?: boolean;
   includesLabel: string;
   includes: string[];
   cta: string;
@@ -24,20 +26,21 @@ type Plan = {
 const PLANS: Plan[] = [
   {
     id: "full",
-    name: "Pay in Full",
+    name: "Pay for Year 1",
     tagline: "Billed once at the start of each year",
+    taglineBelowPrice: true,
     amount: "₹50,000",
     decimals: "",
     cadence: "/Year",
     badge: "Best Value",
     includesLabel: "What's included:",
     includes: [
-      "Covers the full year's programme",
-      "Nothing extra to buy",
-      "No interest or processing fees",
-      "Simplest way to pay",
+      "Complete access to the programme for the year",
+      "Practical, industry-relevant learning",
+      "No interest or processing charges",
+      "One simple annual payment",
     ],
-    cta: "Choose Pay in Full",
+    cta: "Choose Pay for Year 1",
     icon: "bg-brand",
   },
   {
@@ -132,11 +135,18 @@ export default function PaymentPlanSection() {
                     <h3 className="mt-5 text-[1.125rem] font-semibold text-ink">
                       {plan.name}
                     </h3>
-                    <p className="mt-1 text-[0.875rem] text-ink-muted">
-                      {plan.tagline}
-                    </p>
 
-                    <p className="mt-4 flex flex-wrap items-baseline gap-x-2">
+                    {!plan.taglineBelowPrice && (
+                      <p className="mt-1 text-[0.875rem] text-ink-muted">
+                        {plan.tagline}
+                      </p>
+                    )}
+
+                    <p
+                      className={`flex flex-wrap items-baseline gap-x-2 ${
+                        plan.taglineBelowPrice ? "mt-3" : "mt-4"
+                      }`}
+                    >
                       <span className="type-heading text-[clamp(2rem,3.6vw,2.75rem)] font-bold text-ink">
                         {plan.amount}
                       </span>
@@ -144,6 +154,12 @@ export default function PaymentPlanSection() {
                         {plan.cadence}
                       </span>
                     </p>
+
+                    {plan.taglineBelowPrice && (
+                      <p className="mt-1 text-[0.875rem] text-ink-muted">
+                        {plan.tagline}
+                      </p>
+                    )}
 
                     <hr className="mt-6 border-black/10" />
 

@@ -64,8 +64,9 @@ export default function EnrollCard() {
       </div>
 
       <div className="mt-6 space-y-2 border-t border-white/25 pt-5 @[44rem]:flex @[44rem]:items-center @[44rem]:justify-between @[44rem]:space-y-0">
-        <p className="font-display text-[0.8125rem] font-semibold text-white">
-          January 4, 2027
+        <p className="font-display text-[0.8125rem] text-white/75">
+          Classes Start :{" "}
+          <span className="font-semibold text-white">January 4, 2027</span>
         </p>
         <Link
           href="#payment-plan"
